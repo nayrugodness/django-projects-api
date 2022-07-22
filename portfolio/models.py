@@ -20,6 +20,7 @@ class Project(models.Model):
     description = models.CharField(max_length=200)
     github = models.CharField(max_length=300)
     link = models.ChardField(max_length=300)
+    language = models.ForeignKey(Language, on_delete=models.PROTECT)
     slug = models.SlugField(unique=True)
 
     def __str__(self):
