@@ -1,8 +1,7 @@
 from django.db import models
 
-Language=(
+class Language(models.Model):
 
-)
 
 class Project(models.Model):
     id = models.AutoField(primary_key=True)
