@@ -21,6 +21,7 @@ class Project(models.Model):
     github = models.CharField(max_length=300)
     link = models.ChardField(max_length=300)
     language = models.ForeignKey(Language, on_delete=models.PROTECT)
+    framework = models.ForeignKey(Framework, on_delete=models.PROTECT)
     slug = models.SlugField(unique=True)
 
     def __str__(self):
