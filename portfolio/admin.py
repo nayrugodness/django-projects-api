@@ -10,6 +10,10 @@ class LanguageAdmin(admin.ModelAdmin):
 
     form = LanguageForms
 
+class FrameworkAdmin(admin.ModelAdmin):
+
+    form = FrameworkForms
+
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Language, LanguageAdmin)
-admin.site.register(Framework)
+admin.site.register(Framework, FrameworkAdmin)
