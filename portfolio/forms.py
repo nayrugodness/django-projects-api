@@ -16,3 +16,11 @@ class LanguageForms(forms.ModelForm):
 
         model = Language
         fields = '__all__'
+
+
+class FrameworkForms(forms.ModelForm):
+
+    class Meta:
+
+        model = Framework
+        fields = '__all__'
