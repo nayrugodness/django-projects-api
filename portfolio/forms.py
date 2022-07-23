@@ -8,3 +8,11 @@ class ProjectForms(forms.ModelForm):
 
         model = Project
         fields = '__all__'
+
+
+class LanguageForms(forms.ModelForm):
+
+    class Meta:
+
+        model = Language
+        fields = '__all__'
