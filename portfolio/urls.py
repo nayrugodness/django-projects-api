@@ -4,5 +4,5 @@ from rest_framework import routers
 router = routers.DefaultRouter()
 
 urlpatterns = [
-    path('api/', include(router.urls))
+    path('', include(router.urls)),
 ]
