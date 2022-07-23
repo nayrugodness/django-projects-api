@@ -25,7 +25,7 @@ SECRET_KEY = 'django-env.eba-qhfiwnf7.us-west-2.elasticbeanstalk.com'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.eba-qhfiwnf7.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
