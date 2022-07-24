@@ -1,5 +1,5 @@
 from django import forms
-from .models import Project, Language, Framework
+from .models import Project, Language, Framework, Library
 
 
 class ProjectForms(forms.ModelForm):
@@ -23,4 +23,11 @@ class FrameworkForms(forms.ModelForm):
     class Meta:
 
         model = Framework
+        fields = '__all__'
+
+class LibraryForms(forms.ModelForm):
+
+    class Meta:
+
+        model = Library
         fields = '__all__'
