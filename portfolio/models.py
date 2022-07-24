@@ -30,6 +30,7 @@ class Project(models.Model):
     link = models.CharField(max_length=300)
     language = models.ForeignKey(Language, on_delete=models.PROTECT)
     framework = models.ForeignKey(Framework, on_delete=models.PROTECT)
+    library = models.ForeignKey(Library, on_delete=models.PROTECT)
     slug = models.SlugField(unique=True)
 
     def __str__(self):
